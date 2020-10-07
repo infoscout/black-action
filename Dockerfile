@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/lgeiger/black-action"
 LABEL "homepage"="https://github.com/lgeiger/black-action"
 LABEL "maintainer"=""
 
-RUN apk add gcc
+RUN apk add gcc musl-dev
 RUN pip install black==20.8b1
 
 COPY entrypoint.sh /entrypoint.sh

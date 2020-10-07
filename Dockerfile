@@ -10,7 +10,7 @@ LABEL "homepage"="https://github.com/lgeiger/black-action"
 LABEL "maintainer"=""
 
 # project specific path
-ADD server/dev-requirements.txt /dev-requirements.txt
+COPY server/dev-requirements.txt /dev-requirements.txt
 
 RUN apk add gcc
 RUN pip install $(black bandit dev-requirements.txt)

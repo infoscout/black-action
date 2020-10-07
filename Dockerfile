@@ -13,7 +13,7 @@ LABEL "maintainer"=""
 COPY server/dev-requirements.txt /dev-requirements.txt
 
 RUN apk add gcc
-RUN pip install $(black bandit dev-requirements.txt)
+RUN pip install black==20.8b1
 
 COPY entrypoint.sh /entrypoint.sh
 

@@ -9,9 +9,6 @@ LABEL "repository"="https://github.com/lgeiger/black-action"
 LABEL "homepage"="https://github.com/lgeiger/black-action"
 LABEL "maintainer"=""
 
-# project specific path
-COPY server/dev-requirements.txt /dev-requirements.txt
-
 RUN apk add gcc
 RUN pip install black==20.8b1
 
